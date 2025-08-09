@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 17.6%);
+  --card: hsl(42, 29%, 97%);
+  --card-foreground: hsl(0, 0%, 17.6%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(0, 0%, 17.6%);
+  --primary: hsl(0, 0%, 11%);
+  --primary-foreground: hsl(42, 29%, 97%);
+  --secondary: hsl(28, 19%, 54%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(42, 29%, 97%);
+  --muted-foreground: hsl(0, 0%, 17.6%);
+  --accent: hsl(43, 47%, 86%);
+  --accent-foreground: hsl(0, 0%, 11%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(28, 19%, 54%);
+  --input: hsl(42, 29%, 97%);
+  --ring: hsl(0, 0%, 11%);
+  --radius: 0.5rem;
+  
+  /* Custom Hartani colors */
+  --charcoal: hsl(0, 0%, 11%);
+  --cream: hsl(42, 29%, 97%);
+  --earthy: hsl(28, 19%, 54%);
+  --soft-black: hsl(0, 0%, 17.6%);
+  --champagne: hsl(43, 47%, 86%);
+  
+  /* Custom fonts */
+  --font-playfair: 'Playfair Display', serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+.dark {
+  --background: hsl(0, 0%, 11%);
+  --foreground: hsl(42, 29%, 97%);
+  --card: hsl(0, 0%, 11%);
+  --card-foreground: hsl(42, 29%, 97%);
+  --popover: hsl(0, 0%, 11%);
+  --popover-foreground: hsl(42, 29%, 97%);
+  --primary: hsl(42, 29%, 97%);
+  --primary-foreground: hsl(0, 0%, 11%);
+  --secondary: hsl(28, 19%, 54%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 17.6%);
+  --muted-foreground: hsl(42, 29%, 90%);
+  --accent: hsl(28, 19%, 20%);
+  --accent-foreground: hsl(42, 29%, 97%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(28, 19%, 20%);
+  --input: hsl(0, 0%, 17.6%);
+  --ring: hsl(42, 29%, 97%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-montserrat antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair);
+  }
+}
+
+@layer components {
+  .handwritten-logo {
+    font-family: 'Brush Script MT', cursive;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(135deg, hsl(42, 29%, 97%) 0%, hsl(43, 47%, 86%) 100%);
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .image-overlay {
+    background: linear-gradient(to bottom, hsla(0, 0%, 11%, 0.3), hsla(0, 0%, 11%, 0.7));
+  }
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: var(--font-playfair);
+  }
+  
+  .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
+  
+  .text-charcoal {
+    color: var(--charcoal);
+  }
+  
+  .text-cream {
+    color: var(--cream);
+  }
+  
+  .text-earthy {
+    color: var(--earthy);
+  }
+  
+  .text-soft-black {
+    color: var(--soft-black);
+  }
+  
+  .text-champagne {
+    color: var(--champagne);
+  }
+  
+  .bg-charcoal {
+    background-color: var(--charcoal);
+  }
+  
+  .bg-cream {
+    background-color: var(--cream);
+  }
+  
+  .bg-earthy {
+    background-color: var(--earthy);
+  }
+  
+  .bg-champagne {
+    background-color: var(--champagne);
+  }
+  
+  .border-charcoal {
+    border-color: var(--charcoal);
+  }
+  
+  .border-earthy {
+    border-color: var(--earthy);
+  }
+}
