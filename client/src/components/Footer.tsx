@@ -17,7 +17,7 @@ export default function Footer() {
             <img 
               src={logoImage} 
               alt="Hartani Logo" 
-              className="h-14 w-auto filter invert brightness-200"
+              className="h-24 w-auto filter invert brightness-200"
             />
             <p className="text-cream/80 leading-relaxed">
               Sustainable luxury couture by Asia's youngest fashion designers. 

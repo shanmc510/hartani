@@ -10,7 +10,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="pt-16 min-h-screen hero-gradient">
+    <section id="home" className="pt-24 min-h-screen hero-gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-screen py-12">
           <div className="order-2 lg:order-1 space-y-8">
