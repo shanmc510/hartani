@@ -1,5 +1,5 @@
 import { Instagram, Facebook } from "lucide-react";
-import logoImage from "@assets/WhatsApp Image 2025-08-10 at 15.43.45_1754815443023.jpeg";
+import logoImage from "@assets/hartani_1754816356042.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -17,7 +17,7 @@ export default function Footer() {
             <img 
               src={logoImage} 
               alt="Hartani Logo" 
-              className="h-12 w-auto"
+              className="h-14 w-auto filter invert brightness-200"
             />
             <p className="text-cream/80 leading-relaxed">
               Sustainable luxury couture by Asia's youngest fashion designers. 

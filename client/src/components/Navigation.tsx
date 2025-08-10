@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoImage from "@assets/WhatsApp Image 2025-08-10 at 15.43.45_1754815443023.jpeg";
+import logoImage from "@assets/hartani_1754816356042.png";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +21,7 @@ export default function Navigation() {
             <img 
               src={logoImage} 
               alt="Hartani Logo" 
-              className="h-8 md:h-10 w-auto cursor-pointer" 
+              className="h-10 md:h-12 w-auto cursor-pointer filter brightness-75" 
               onClick={() => scrollToSection('home')}
             />
           </div>
