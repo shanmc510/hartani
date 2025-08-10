@@ -1,3 +1,5 @@
+import foundersImage from "@assets/IMG_20250802_182537_1754705320242.jpg";
+
 export default function FoundersStory() {
   return (
     <section id="about" className="py-24 bg-white">
@@ -44,28 +46,17 @@ export default function FoundersStory() {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="space-y-4">
+          <div className="flex justify-center">
+            <div className="space-y-4 max-w-md">
               <img 
-                src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500" 
-                alt="Emmeline Hart, Co-founder of Hartani" 
-                className="w-full h-64 sm:h-80 object-cover rounded-lg shadow-lg"
+                src={foundersImage} 
+                alt="Emmeline Hart and Shan Mahtani, Co-founders of Hartani" 
+                className="w-full h-96 object-cover rounded-lg shadow-lg"
               />
               <div className="text-center">
-                <h4 className="font-playfair text-lg font-semibold text-charcoal">Emmeline Hart</h4>
-                <p className="text-soft-black/70">Co-founder & Design Director</p>
-              </div>
-            </div>
-            
-            <div className="space-y-4">
-              <img 
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500" 
-                alt="Shan Mahtani, Co-founder of Hartani" 
-                className="w-full h-64 sm:h-80 object-cover rounded-lg shadow-lg"
-              />
-              <div className="text-center">
-                <h4 className="font-playfair text-lg font-semibold text-charcoal">Shan Mahtani</h4>
-                <p className="text-soft-black/70">Co-founder & Sustainability Director</p>
+                <h4 className="font-playfair text-lg font-semibold text-charcoal">Emmeline Hart & Shan Mahtani</h4>
+                <p className="text-soft-black/70">Co-founders & Design Directors</p>
+                <p className="text-soft-black/60 text-sm mt-2">Asia's youngest fashion entrepreneurs</p>
               </div>
             </div>
           </div>

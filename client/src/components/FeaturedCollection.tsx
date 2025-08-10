@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check, Star } from "lucide-react";
-import youngModelsImage from "@assets/IMG_20250802_182537_1754705320242.jpg";
+import dressImage from "@assets/ChatGPT Image May 31, 2025, 11_08_06 AM_1754704813777.png";
 
 export default function FeaturedCollection() {
   const scrollToContact = () => {
@@ -83,8 +83,8 @@ export default function FeaturedCollection() {
           <div className="relative">
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <img 
-                src={youngModelsImage} 
-                alt="Young models wearing Hartani custom dresses" 
+                src={dressImage} 
+                alt="Hartani signature tiered floral dress" 
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/30 to-transparent"></div>
