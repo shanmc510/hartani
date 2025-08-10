@@ -1,4 +1,5 @@
 import { Instagram, Facebook } from "lucide-react";
+import logoImage from "@assets/WhatsApp Image 2025-08-10 at 15.43.45_1754815443023.jpeg";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -13,7 +14,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="space-y-6">
-            <div className="handwritten-logo text-cream text-3xl">Hartani</div>
+            <img 
+              src={logoImage} 
+              alt="Hartani Logo" 
+              className="h-12 w-auto"
+            />
             <p className="text-cream/80 leading-relaxed">
               Sustainable luxury couture by Asia's youngest fashion designers. 
               Ethical, beautiful, and made just for you.

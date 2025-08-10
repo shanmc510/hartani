@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoImage from "@assets/WhatsApp Image 2025-08-10 at 15.43.45_1754815443023.jpeg";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +18,12 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <div className="handwritten-logo text-2xl md:text-3xl text-charcoal cursor-pointer" onClick={() => scrollToSection('home')}>
-              Hartani
-            </div>
+            <img 
+              src={logoImage} 
+              alt="Hartani Logo" 
+              className="h-8 md:h-10 w-auto cursor-pointer" 
+              onClick={() => scrollToSection('home')}
+            />
           </div>
           
           <div className="hidden md:block">
